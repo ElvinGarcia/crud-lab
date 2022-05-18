@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Review extends Component {
 
   render() {
-    const { review } = this.props;
+    const { review, deleteReview } = this.props;
     const handleClick = () => {
-      this.props.deleteReview(review.id);
+      deleteReview(review.id);
     }
     return (
       <div>
